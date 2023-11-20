@@ -15,5 +15,6 @@ class ContaBancaria {
        conta2.depositar(1000.00);
        conta2.sacar(2500.00); // Isso deve acionar o cheque especial
        conta2.mostrarSaldo();
+       conta2.viapix(90.000);
    }
 }
