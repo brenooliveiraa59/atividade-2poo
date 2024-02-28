@@ -1,0 +1,109 @@
+/* Reset de Estilos */
+* {
+  margin: 29px;
+  padding: 1px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+.secao-login {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.secao-login header {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.botoes-sociais {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.botoes-sociais button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4285f4;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botoes-sociais button:hover {
+  background-color: #357ae8;
+}
+
+.separador {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.linha {
+  width: 45%;
+  height: 1px;
+  background-color: #ccc;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.separador p {
+  display: inline-block;
+  margin: 0 10px;
+  color: #888;
+}
+
+#login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#login-form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4285f4;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#login-form button:hover {
+  background-color: #357ae8;
+}
+
+#login-form a {
+  text-decoration: none;
+  color: #888;
+  font-size: 14px;
+}
+
+#login-form a:hover {
+  color: #666;
+}
