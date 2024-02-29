@@ -1,46 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <head>
-       <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="soveiteria.css">
-    <title> Sorveteria Online</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="sorvete.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
-
 <body>
     <div class="container">
-        <div class="secao-login">
-            <header>Sorveteria</header>
-
-            <div class="botoes-sociais">
-                <button><i class='bx bxl-google'></i> Google</button>
-                <button><i class='bx bxl-apple'></i> Apple</button>
-                <button><i class='bx bxl-android'></i> Android</button>
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Sorveteria</h2>
+                <p class="description description-primary">Doces árabes feitos com gelo triturado, frutas e açúcar </p>
+                <p class="description description-primary">Sorvete saboroso é uma sobremesa gelada</p>
+                <button id="signin" class="btn btn-primary">historia</button>
+            </div>    
+            <div class="second-column">
+                <h2 class="title title-second">FrostFlavors</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-facebook-f"></i>        
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-google-plus-g"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div><!-- social media -->
+                <p class="description description-second">use seu e-mail para cadastro:</p>
+                <form class="form">
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="Name">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Password">
+                    </label>
+                    
+                    
+                    <button class="btn btn-second">cadastro</button>        
+                </form>
+            </div><!-- second column -->
+        </div><!-- first content -->
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Bem vindos a sorveteria!</h2>
+                <p class="description description-primary">Insira seus dados pessoais</p>
+                <p class="description description-primary">e venha conosco saboria os novos sabores</p>
+                <button id="signup" class="btn btn-primary">historia</button>
             </div>
-
-            <div class="separador">
-                <div class="linha"></div>
-                <p>Ou</p>
-                <div class="linha"></div>
-            </div>
-
-            <form id="login-form">
-                <input type="email" placeholder="Endereço de email" required>
-                <input type="password" placeholder="Senha" required>
-                <a href="#">Esqueceu a senha?</a><br>
-                <button type="submit" class="btn">Login</button>
-            </form>
-        </div>
+            <div class="second-column">
+                <h2 class="title title-second">FrostFlavors</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-google-plus-g"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div><!-- social media -->
+                <p class="description description-second">use seu e-mail para cadastro:</p>
+                <form class="form">
+                
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Password">
+                    </label>
+                
+                    <a class="password" href="#">What is Iced Flavors?</a>
+                    <button class="btn btn-second">login</button>
+                </form>
+            </div><!-- second column -->
+        </div><!-- second-content -->
     </div>
-
-    <script src="soveiteria.js"></script>
-    <link rel="stylesheet" href="sorv.html">
-    <link rel="stylesheet" href="sorv.js">
-    <link rel="stylesheet" href="sorv.css">
-
+    <script src="sorvete.js"></script>
 </body>
-
 </html>
-  
