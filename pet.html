@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define o conjunto de caracteres e a escala de visualização -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o título da página -->
+    <title>Pet NickShop</title>
+    <!-- Importa o arquivo de estilo CSS -->
+    <link rel="stylesheet" href="pet.css">
+</head>
+<body>
+    <!-- Início do conteúdo da página -->
+    <div class="container">
+        <!-- Cabeçalho da página -->
+        <header>
+            <h1>Blog do Pet NickShop</h1>
+        </header>
+        
+        <!-- Postagem 1 -->
+        <article>
+            <h2>Como manter seu pet saudável durante o verão</h2>
+            <p>No verão, os cuidados com os pets devem ser redobrados. Confira algumas dicas essenciais para manter seu pet saudável e feliz durante os dias quentes.</p>
+            <a href="#">Leia mais...</a>
+        </article>
+        
+        <!-- Postagem 2 -->
+        <article>
+            <h2>Os benefícios do banho e tosa para o seu pet</h2>
+            <p>O banho e tosa não só mantêm a aparência do seu pet, mas também são importantes para a saúde e bem-estar dele. Descubra os benefícios desses cuidados essenciais.</p>
+            <a href="#">Leia mais...</a>
+        </article>
+        
+        <!-- Postagem 3 -->
+        <article>
+            <h2>Como escolher os melhores produtos para o seu pet</h2>
+            <p>Com tantas opções disponíveis, pode ser difícil escolher os produtos certos para o seu pet. Saiba como selecionar os melhores alimentos, brinquedos e acessórios.</p>
+            <a href="#">Leia mais...</a>
+        </article>
+        
+        <!-- Postagem 4 -->
+        <article>
+            <h2>Dicas para treinar seu pet em casa</h2>
+            <p>Treinar seu pet em casa pode ser uma experiência gratificante para vocês dois. Aprenda algumas técnicas simples para ensinar comandos básicos e reforçar comportamentos desejados.</p>
+            <a href="#">Leia mais...</a>
+        </article>
+        
+        <!-- Postagem 5 -->
+        <article>
+            <h2>Os perigos dos alimentos tóxicos para os pets</h2>
+            <p>Alguns alimentos comuns podem ser tóxicos para os pets e causar problemas de saúde graves. Conheça quais alimentos evitar e mantenha seu pet seguro e saudável.</p>
+            <a href="#">Leia mais...</a>
+        </article>
+    </div>
+    
+    <!-- Formulário de login -->
+    <div id="login-form">
+        <h1>Login</h1>
+        <input type="text" placeholder="Nome">
+        <input type="password" placeholder="Senha">
+        <button onclick="login()">Entrar</button>
+    </div>
+    
+    <!-- Script para controlar o login -->
+    <script>
+        function login() {
+            var loginForm = document.getElementById("login-form");
+            var blogContent = document.getElementById("blog-content");
+            // Oculta o formulário de login e exibe o conteúdo do blog
+            loginForm.style.display = "none";
+            blogContent.style.display = "block";
+        }
+    </script>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Pet Shop. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

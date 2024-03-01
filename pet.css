@@ -1,0 +1,59 @@
+/* Reset de estilos */
+* {
+    box-sizing: border-box; /* Define a caixa de modelo como border-box para incluir o padding e a borda no tamanho total do elemento */
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+
+/* Estilo para o corpo do documento */
+body {
+    font-family: Arial, sans-serif; /* Define a família de fontes para o corpo do documento */
+    background-color: #007bff; /* Define a cor de fundo do corpo do documento como azul */
+    color: #fff; /* Define a cor do texto como branco */
+    line-height: 1.6; /* Define a altura da linha para melhor legibilidade */
+    padding: 20px; /* Adiciona preenchimento ao redor do corpo do documento */
+}
+
+/* Estilo para o contêiner */
+.container {
+    max-width: 800px; /* Define a largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    text-align: center; /* Alinha o texto do cabeçalho ao centro */
+    margin-bottom: 30px; /* Adiciona espaço na parte inferior do cabeçalho */
+}
+
+/* Estilo para os títulos */
+h1, h2 {
+    color: #fff; /* Define a cor do texto dos títulos como branco */
+    margin-bottom: 10px; /* Adiciona espaço na parte inferior dos títulos */
+}
+
+/* Estilo para as postagens */
+article {
+    background-color: #0056b3; /* Define a cor de fundo das postagens como azul mais escuro */
+    padding: 20px; /* Adiciona preenchimento dentro das postagens */
+    margin-bottom: 20px; /* Adiciona espaço na parte inferior das postagens */
+    border-radius: 5px; /* Adiciona bordas arredondadas às postagens */
+}
+
+/* Estilo para os links */
+a {
+    color: #fff; /* Define a cor dos links como branco */
+    text-decoration: none; /* Remove a decoração de texto padrão dos links */
+    font-weight: bold; /* Define o peso da fonte dos links como negrito */
+}
+
+/* Estilo para os links quando passam o mouse */
+a:hover {
+    text-decoration: underline; /* Adiciona sublinhado aos links quando o mouse passa por cima */
+}
+
+/* Estilo para o rodapé */
+footer {
+    text-align: center; /* Alinha o texto do rodapé ao centro */
+    padding-top: 20px; /* Adiciona espaço na parte superior do rodapé */
+}
