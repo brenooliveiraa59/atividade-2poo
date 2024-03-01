@@ -1,269 +1,288 @@
+/* Importando a fonte Open Sans do Google Fonts com diferentes pesos */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+/* Resetando margens, preenchimentos e definindo a caixa de modelo como border-box */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Definindo a fonte padrão para o corpo do documento */
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+/* Estilo do container principal */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #ecf0f1;
+    background-color: #ecf0f1; /* Cor de fundo do container */
 }
+
+/* Estilo do conteúdo principal */
 .content {
-    background-color: #fff;
-    border-radius: 15px;
-    width: 960px;
-    height: 50%;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+    background-color: #fff; /* Cor de fundo do conteúdo */
+    border-radius: 15px; /* Bordas arredondadas */
+    width: 960px; /* Largura do conteúdo */
+    height: 50%; /* Altura do conteúdo */
+    justify-content: space-between; /* Alinhamento dos elementos filhos */
+    align-items: center; /* Alinhamento dos elementos filhos */
+    position: relative; /* Posicionamento relativo para o pseudo-elemento */
 }
+
+/* Estilo do pseudo-elemento ::before do conteúdo */
 .content::before {
-    content: "";
-    position: absolute;
-    background-color: #58af9b;
-    width: 40%;
-    height: 100%;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-
-
-    left: 0;
+    content: ""; /* Conteúdo do pseudo-elemento */
+    position: absolute; /* Posicionamento absoluto em relação ao elemento pai */
+    background-color: #58af9b; /* Cor de fundo do pseudo-elemento */
+    width: 40%; /* Largura do pseudo-elemento */
+    height: 100%; /* Altura do pseudo-elemento */
+    border-top-left-radius: 15px; /* Bordas arredondadas do canto superior esquerdo */
+    border-bottom-left-radius: 15px; /* Bordas arredondadas do canto inferior esquerdo */
+    left: 0; /* Distância do lado esquerdo */
 }
+
+/* Estilos para os títulos */
 .title {
-    font-size: 28px;
-    font-weight: bold;
-    text-transform: capitalize;
+    font-size: 28px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    text-transform: capitalize; /* Transformação do texto para maiúsculas */
 }
+
 .title-primary {
-    color: #fff;
+    color: #fff; /* Cor do texto */
 }
+
 .title-second {
-    color: #000000;
+    color: #000000; /* Cor do texto */
 }
+
+/* Estilos para descrições */
 .description {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 30px;
+    font-size: 14px; /* Tamanho da fonte */
+    font-weight: 300; /* Peso da fonte */
+    line-height: 30px; /* Altura da linha */
 }
+
 .description-primary {
-    color: #fff;
+    color: #fff; /* Cor do texto */
 }
+
 .description-second {
-    color: #7f8c8d;
+    color: #7f8c8d; /* Cor do texto */
 }
+
+/* Estilos para botões */
 .btn {
-    border-radius: 15px;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 10px;
-    padding: 10px 50px;
-    cursor: pointer;
-    font-weight: bold;
-    width: 150px;
-    align-self: center;
-    border: none;
-    margin-top: 1rem;
+    border-radius: 15px; /* Bordas arredondadas */
+    text-transform: uppercase; /* Transformação do texto para maiúsculas */
+    color: #fff; /* Cor do texto */
+    font-size: 10px; /* Tamanho da fonte */
+    padding: 10px 50px; /* Preenchimento interno */
+    cursor: pointer; /* Cursor do mouse */
+    font-weight: bold; /* Peso da fonte */
+    width: 150px; /* Largura do botão */
+    align-self: center; /* Alinhamento do botão */
+    border: none; /* Sem borda */
+    margin-top: 1rem; /* Margem superior */
 }
+
 .btn-primary {
-    background-color: transparent;
-    border: 1px solid #fff;
-    transition: background-color .5s;
+    background-color: transparent; /* Cor de fundo transparente */
+    border: 1px solid #fff; /* Borda sólida */
+    transition: background-color .5s; /* Transição de cor de fundo */
 }
+
 .btn-primary:hover {
-    background-color: #fff;
-    color: #58af9b;
+    background-color: #fff; /* Cor de fundo ao passar o mouse */
+    color: #58af9b; /* Cor do texto ao passar o mouse */
 }
+
 .btn-second {
-    background-color: #58af9b;
-    border: 1px solid #58af9b;
-    transition: background-color .5s;
+    background-color: #58af9b; /* Cor de fundo */
+    border: 1px solid #58af9b; /* Borda sólida */
+    transition: background-color .5s; /* Transição de cor de fundo */
 }
+
 .btn-second:hover {
-    background-color: #fff;
-    border: 1px solid #58af9b;
-    color: #58af9b;
+    background-color: #fff; /* Cor de fundo ao passar o mouse */
+    border: 1px solid #58af9b; /* Borda ao passar o mouse */
+    color: #58af9b; /* Cor do texto ao passar o mouse */
 }
+
+/* Estilos para o layout em duas colunas */
 .first-content {
-    display: flex;
+    display: flex; /* Exibição flexível */
 }
+
 .first-content .second-column {
-    z-index: 11;
+    z-index: 11; /* Ordem de empilhamento */
 }
+
 .first-column {
-    text-align: center;
-    width: 40%;
-    z-index: 10;
+    text-align: center; /* Alinhamento do texto */
+    width: 40%; /* Largura da primeira coluna */
+    z-index: 10; /* Ordem de empilhamento */
 }
+
 .second-column {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 60%; /* Largura da segunda coluna */
+    display: flex; /* Exibição flexível */
+    flex-direction: column; /* Direção da disposição dos itens */
+    align-items: center; /* Alinhamento dos itens */
 }
+
+/* Estilos para ícones de mídia social */
 .social-media {
-    margin: 1rem 0;
+    margin: 1rem 0; /* Margem externa */
 }
-.link-social-media:not(:first-child){
-    margin-left: 10px;
+
+.link-social-media:not(:first-child) {
+    margin-left: 10px; /* Margem à esquerda */
 }
+
 .link-social-media .item-social-media {
-    transition: background-color .5s;
+    transition: background-color .5s; /* Transição de cor de fundo */
 }
-.link-social-media:hover .item-social-media{
-    background-color: #5b8178;
-    color: #ffffff;
-    border-color: #769c9a;
+
+.link-social-media:hover .item-social-media {
+    background-color: #5b8178; /* Cor de fundo ao passar o mouse */
+    color: #ffffff; /* Cor do texto ao passar o mouse */
+    border-color: #769c9a; /* Cor da borda ao passar o mouse */
 }
+
 .list-social-media {
-    display: flex;
-    list-style-type: none;
+    display: flex; /* Exibição flexível */
+    list-style-type: none; /* Estilo da lista */
 }
+
 .item-social-media {
-    border: 1px solid #bdc3c7;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    text-align: center;
-    color: #000000b6;
+    border: 1px solid #bdc3c7; /* Borda sólida */
+    border-radius: 50%; /* Bordas arredondadas */
+    width: 35px; /* Largura */
+    height: 35px; /* Altura */
+    line-height: 35px; /* Altura da linha */
+    text-align: center; /* Alinhamento do texto */
+    color: #000000b6; /* Cor do texto */
 }
+
+/* Estilos para o formulário */
 .form {
-    display: flex;
-    flex-direction: column;
-    width: 55%;
+    display: flex; /* Exibição flexível */
+    flex-direction: column; /* Direção da disposição dos itens */
+    width: 55%; /* Largura do formulário */
 }
+
 .form input {
-    height: 45px;
-    width: 100%;
-    border: none;
-    background-color: #fdfdfd;
+    height: 45px; /* Altura do input */
+    width: 100%; /* Largura do input */
+    border: none; /* Sem borda */
+    background-color: #fdfdfd; /* Cor de fundo do input */
 }
-input:-webkit-autofill 
-{    
-    -webkit-box-shadow: 0 0 0px 1000px #ffeeee inset !important;
-    -webkit-text-fill-color: #000000 !important;
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #ffeeee inset !important; /* Sombra para preenchimento automático do navegador */
+    -webkit-text-fill-color: #000000 !important; /* Cor do texto para preenchimento automático do navegador */
 }
+
 .label-input {
-    background-color: #ecf0f1;
-    display: flex;
-    align-items: center;
-    margin: 8px;
+    background-color: #ecf0f1; /* Cor de fundo do rótulo */
+    display: flex; /* Exibição flexível */
+    align-items: center; /* Alinhamento dos itens */
+    margin: 8px; /* Margem externa */
 }
+
 .icon-modify {
-    color: #010b0c;
-    padding: 0 5px;
+    color: #010b0c; /* Cor do ícone */
+    padding: 0 5px; /* Preenchimento interno */
 }
 
-/* second content*/
-
+/* Estilos para o conteúdo secundário */
 .second-content {
-    position: absolute;
-    display: flex;
+    position: absolute; /* Posicionamento absoluto */
+    display: flex; /* Exibição flexível */
 }
+
 .second-content .first-column {
-    order: 2;
-    z-index: -1;
+    order: 2; /* Ordem de exibição */
+    z-index: -1; /* Ordem de empilhamento */
 }
+
 .second-content .second-column {
-    order: 1;
-    z-index: -1;
+    order: 1; /* Ordem de exibição */
+    z-index: -1; /* Ordem de empilhamento */
 }
+
 .password {
-    color: #34495e;
-    font-size: 14px;
-    margin: 15px 0;
-    text-align: center;
+    color: #34495e; /* Cor do texto */
+    font-size: 14px; /* Tamanho da fonte */
+    margin: 15px 0; /* Margem externa */
+    text-align: center; /* Alinhamento do texto */
 }
+
 .password::first-letter {
-    text-transform: capitalize;
+    text-transform: capitalize; /* Transformação do texto para maiúscula */
 }
 
-
-
+/* Estilos para animações de entrada e saída */
 .sign-in-js .first-content .first-column {
-    z-index: -1;
+    z-index: -1; /* Ordem de empilhamento */
 }
 
 .sign-in-js .second-content .second-column {
-    z-index: 11;
+    z-index: 11; /* Ordem de empilhamento */
 }
+
 .sign-in-js .second-content .first-column {
-    z-index: 13;
+    z-index: 13; /* Ordem de empilhamento */
 }
 
 .sign-in-js .content::before {
-    left: 60%;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    animation: slidein 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
-
-    z-index: 12;
+    left: 60%; /* Posição inicial do pseudo-elemento */
+    border-top-left-radius: 0; /* Removendo bordas arredondadas */
+    border-bottom-left-radius: 0; /* Removendo bordas arredondadas */
+    border-top-right-radius: 15px; /* Bordas arredondadas */
+    border-bottom-right-radius: 15px; /* Bordas arredondadas */
+    animation: slidein 1.3s; /* Animação de entrada */
+    z-index: 12; /* Ordem de empilhamento */
 }
 
 .sign-up-js .content::before {
-    animation: slideout 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
-
-    z-index: 12;
+    animation: slideout 1.3s; /* Animação de saída */
+    z-index: 12; /* Ordem de empilhamento */
 }
 
 .sign-up-js .second-content .first-column,
 .sign-up-js .second-content .second-column {
-    z-index: -1;
+    z-index: -1; /* Ordem de empilhamento */
 }
 
 .sign-up-js .first-content .second-column {
-    z-index: 11;
+    z-index: 11; /* Ordem de empilhamento */
 }
 
 .sign-up-js .first-content .first-column {
-    z-index: 13;    
+    z-index: 13; /* Ordem de empilhamento */
 }
 
-
-/* DESLOCAMENTO CONTEÚDO ATRÁS DO CONTENT:BEFORE*/
-.sign-in-js .first-content .second-column {
-
-    z-index: -1;
-    position: relative;
-    animation: deslocamentoEsq 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
-}
-
-.sign-up-js .second-content .second-column {
-    position: relative;
-    z-index: -1;
-    animation: deslocamentoDir 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
-}
-
-/*ANIMAÇÃOO CSS PARA O CONTEÚDO*/
-
+/* Animações CSS para deslocamento */
 @keyframes deslocamentoEsq {
-
     from {
         left: 0;
         opacity: 1;
         z-index: 12;
     }
-
     25% {
         left: -80px;
         opacity: .5;
-        /* z-index: 12; NÃO HÁ NECESSIDADE */
     }
-
     50% {
         left: -100px;
         opacity: .2;
-        /* z-index: 12; NÃO HÁ NECESSIDADE */
     }
-
     to {
         left: -110px;
         opacity: 0;
@@ -271,56 +290,41 @@ input:-webkit-autofill
     }
 }
 
-
 @keyframes deslocamentoDir {
-
     from {
         left: 0;
         z-index: 12;
     }
-
     25% {
         left: 80px;
-        /* z-index: 12;  NÃO HÁ NECESSIDADE*/
     }
-
     50% {
         left: 100px;
-        /* z-index: 12; NÃO HÁ NECESSIDADE*/
-        /* background-color: yellow;  Exemplo que dei no vídeo*/
     }
-
     to {
         left: 110px;
         z-index: -1;
     }
 }
 
-
-/*ANIMAÇÃO CSS*/
-
+/* Animações CSS para slide */
 @keyframes slidein {
-
     from {
         left: 0;
         width: 40%;
     }
-
     25% {
         left: 5%;
         width: 50%;
     }
-
     50% {
         left: 25%;
         width: 60%;
     }
-
     75% {
         left: 45%;
         width: 50%;
     }
-
     to {
         left: 60%;
         width: 40%;
@@ -328,188 +332,67 @@ input:-webkit-autofill
 }
 
 @keyframes slideout {
-
     from {
         left: 60%;
         width: 40%;
     }
-
     25% {
         left: 45%;
         width: 50%;
     }
-
     50% {
         left: 25%;
         width: 60%;
     }
-
     75% {
         left: 5%;
         width: 50%;
     }
-
     to {
         left: 0;
         width: 40%;
     }
 }
 
-/*VERSÃO MOBILE*/
+/* Estilos responsivos para telas menores */
 @media screen and (max-width: 1040px) {
     .content {
-        width: 100%;
-        height: 100%;
+        width: 100%; /* Largura total */
+        height: 100%; /* Altura total */
     }
-
     .content::before {
-        width: 100%;
-        height: 40%;
-        top: 0;
-        border-radius: 0;
+        width: 100%; /* Largura total */
+        height: 40%; /* Altura de 40% */
+        top: 0; /* Distância do topo */
+        border-radius: 0; /* Bordas arredondadas */
     }
-    .first-content, .second-content {
-        flex-direction: column;
-        justify-content: space-around;
+    .first-content,
+    .second-content {
+        flex-direction: column; /* Direção da disposição dos itens */
+        justify-content: space-around; /* Espaçamento entre os itens */
     }
-
-    .first-column, .second-column {
-        width: 100%;
+    .first-column,
+    .second-column {
+        width: 100%; /* Largura total */
     }
-    
     .sign-in-js .content::before {
-        top: 60%;
-        left: 0;
-        border-radius: 0;
-
+        top: 60%; /* Distância do topo */
+        left: 0; /* Distância do lado esquerdo */
+        border-radius: 0; /* Bordas arredondadas */
     }
-
     .form {
-        width: 90%;
+        width: 90%; /* Largura do formulário */
     }
-    
-    /* ANIMAÇÃO MOBILE CSS*/
-
-    @keyframes deslocamentoEsq {
-
-        from {
-            top: 0;
-            opacity: 1;
-            z-index: 12;
-        }
-    
-        25% {
-            top: -80px;
-            opacity: .5;
-            /* z-index: 12; NÃO HÁ NECESSIDADE */
-        }
-    
-        50% {
-            top: -100px;
-            opacity: .2;
-            /* z-index: 12; NÃO HÁ NECESSIDADE */
-        }
-    
-        to {
-            top: -110px;
-            opacity: 0;
-            z-index: -1;
-        }
-    }
-    
-    
-    @keyframes deslocamentoDir {
-    
-        from {
-            top: 0;
-            z-index: 12;
-        }
-    
-        25% {
-            top: 80px;
-            /* z-index: 12;  NÃO HÁ NECESSIDADE*/
-        }
-    
-        50% {
-            top: 100px;
-            /* z-index: 12; NÃO HÁ NECESSIDADE*/
-            /* background-color: yellow;  Exemplo que dei no vídeo*/
-        }
-    
-        to {
-            top: 110px;
-            z-index: -1;
-        }
-    }
-    
-    
-    
-    @keyframes slidein {
-    
-        from {
-            top: 0;
-            height: 40%;
-        }
-    
-        25% {
-            top: 5%;
-            height: 50%;
-        }
-    
-        50% {
-            top: 25%;
-            height: 60%;
-        }
-    
-        75% {
-            top: 45%;
-            height: 50%;
-        }
-    
-        to {
-            top: 60%;
-            height: 40%;
-        }
-    }
-    
-    @keyframes slideout {
-    
-        from {
-            top: 60%;
-            height: 40%;
-        }
-    
-        25% {
-            top: 45%;
-            height: 50%;
-        }
-    
-        50% {
-            top: 25%;
-            height: 60%;
-        }
-    
-        75% {
-            top: 5%;
-            height: 50%;
-        }
-    
-        to {
-            top: 0;
-            height: 40%;
-        }
-    }
-   
 }
 
 @media screen and (max-width: 740px) {
     .form {
-        width: 50%;
+        width: 50%; /* Largura do formulário */
     }
 }
 
 @media screen and (max-width: 425px) {
     .form {
-        width: 100%;
+        width: 100%; /* Largura total */
     }
 }
