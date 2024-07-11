@@ -29,3 +29,32 @@
       
     </div>
     </header>
+
+    <center>
+    <br><br><br><br><br><br><br><br><br><br>
+    <table width="100px" border="1">
+    <td><a href="htpps://www.terabyteshop.com.br/"><img src="imagens/1.jpg"width="400" height="500"></a></td>
+    <img src="imagens/2.jpg"width="400" height="500"></a></td>
+    <img src="imagens/3.jpg"width="400" height="500"></a></td>
+    <img src="imagens/4.jpg"width="400" height="500"></a></td>
+  
+  </tr>
+  
+  <table width="100px" border="1">
+    <td><a href="htpps://www.terabyteshop.com.br/"><img src="imagens/6.jpg"width="400" height="500"></a></td>
+      <img src="imagens/7.jpg"width="400" height="500"></a></td>
+      <img src="imagens/8.jpg"width="400" height="500"></a></td>
+      <img src="imagens/9.jpg"width="400" height="500"></a></td>
+  
+  </table>
+  </tr>
+  
+  <table width="100px" border="1">
+    <td><a href="htpps://www.terabyteshop.com.br/"><img src="imagens/10.jpg"width="400" height="500"></a></td>
+      <img src="imagens/11.jpg"width="400" height="500"></a></td>
+      <img src="imagens/12.jpg"width="400" height="500"></a></td>
+      <img src="imagens/13.jpg"width="400" height="500"></a></td>
+  
+      </table>
+      </tr>
+  </center>    
