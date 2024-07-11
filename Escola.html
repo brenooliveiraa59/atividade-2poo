@@ -3,68 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escola de londrina</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        form {
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        input, button {
-            margin-bottom: 10px;
-            display: block;
-            width: 100%;
-            padding: 8px;
-            box-sizing: border-box;
-        }
-        button {
-            background-color: #289c2c;
-            color: rgb(240, 240, 240);
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: rgb(0, 0, 0);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>housetec</title>  
 </head>
-</body>
-
-    <h1>Bem-vindo à Escola de londrina</h1>
-
-    <form id="formulario">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
-
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="nacimento">nacimento:</label>
-        <input type="number" id="nacimento" name="nacimento" required>
-
-
-        <button type="button" onclick="validarFormulario()">Enviar</button>
-    </form>
-
-    <script>
-        function validarFormulario() {
-            var nome = document.getElementById('nome').value;
-            var email = document.getElementById('email').value;
-            var nacimento = document.getElementById('nacimento').value;
-
-            if (nome && email && nacimento) {
-                alert('Formulário enviado com sucesso!');
-                // Aqui você pode adicionar código para enviar os dados para o servidor, por exemplo, usando AJAX.
-            } else {
-                alert('Por favor, preencha todos os campos.');
-                alert('Por favor, tente mais tarde');
-                alert('O problema está sendo resolvido');
-            }
-        }
-    </script>
-
+<body>
+    <header>
+    <div class="container">
+      <div class="logo"><img src="imagens/LOGO.png"></div>  
+      <div class="menu">
+        <nav>
+          <a href="index.html">HOME</a>
+          <a href="produtos.html">PRODUTOS</a>
+          <a href="#">SAC</a>
+        </nav>
+    </div>
+    <div class="sociais">
+      <a href="https://www.instagram.com/"><img src="imagens/insta.png"></a>
+      <a href="https://www.X.com/"><img src="imagens/x.png"></a>
+      <a href="https://www.youtube.com/"><img src="imagens/youtube.png"></a>
+      <img src="imagens/CARRINHO.png">
+    </div>
+    </header>
 </body>
 </html>
