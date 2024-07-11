@@ -1,70 +1,126 @@
-class Escola {
-    constructor(nome) {
-      this.nome = nome;
-      this.professores = [];
-      this.alunos = [];
-    }
-  
-    adicionarProfessor(professor) {
-      this.professores.push(professor);
-      console.log(`${professor.nome} foi adicionado como professor na ${this.nome}.`);
-    }
-  
-    adicionarAluno(aluno) {
-      this.alunos.push(aluno);
-      console.log(`${aluno.nome} foi matriculado na ${this.nome}.`);
-    }
-  
-    listarProfessores() {
-      console.log(`Professores da ${this.nome}:`);
-      this.professores.forEach(professor => {
-        console.log(`- ${professor.nome}`);
-      });
-    }
-  
-    listarAlunos() {
-      console.log(`Alunos da ${this.nome}:`);
-      this.alunos.forEach(aluno => {
-        console.log(`- ${aluno.nome}`);
-      });
-    }
-  }
-  
-  class Pessoa {
-    constructor(nome) {
-      this.nome = nome;
-    }
-  }
-  
-  class Professor extends Pessoa {
-    constructor(nome, disciplina) {
-      super(nome);
-      this.disciplina = disciplina;
-    }
-  }
-  
-  class Aluno extends Pessoa {
-    constructor(nome, serie) {
-      super(nome);
-      this.serie = serie;
-    }
-  }
-  
-  // Exemplo de uso
-  const minhaEscola = new Escola('Escola ABC');
-  
-  const professor1 = new Professor('Professor Silva', 'Geografia');
-  const professor2 = new Professor('Professora Santos', 'Artes');
-  
-  const aluno1 = new Aluno('Marcelinha', '1º ano');
-  const aluno2 = new Aluno('João Paulo', '3º ano');
-  
-  minhaEscola.adicionarProfessor(professor1);
-  minhaEscola.adicionarProfessor(professor2);
-  
-  minhaEscola.adicionarAluno(aluno1);
-  minhaEscola.adicionarAluno(aluno2);
-  
-  minhaEscola.listarProfessores();
-  minhaEscola.listarAlunos();
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+          <div class="logo"><img src="imagens/LOGO.png"></div>  
+          <div class="menu">
+            <nav>
+              <a href="index.html">HOME</a>
+              <a href="produtos.html">PRODUTOS</a>
+              <a href="#">SAC</a>
+            </nav>
+        </div>
+        <div class="sociais">
+          <a href="https://www.instagram.com/"><img src="imagens/insta.png"></a>
+          <a href="https://www.X.com/"><img src="imagens/x.png"></a>
+          <a href="https://www.youtube.com/"><img src="imagens/youtube.png"></a>
+          <img src="imagens/CARRINHO.png">
+        </div>
+        </header>
+    <center>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <tr>
+        <table width="100px" border="1">
+            <td><a href="#"><img src="imagens/1.jpg" width="300" height="450"></a>></td>
+            <td><a href="#"><img src="imagens/2.jpg" width="300" height="450"></a>></td>
+            <td><a href="#"><img src="imagens/3.jpg" width="300" height="450"></a>></td>
+            <td><a href="#"><img src="imagens/4.jpg" width="300" height="450"></a>></td>
+        
+        
+        
+        </table>
+        </tr>
+        <tr>
+        <table width="100px" border="1">
+            <td><a href="#"><img src="imgs/6.jpg" width="300" height="450"></a>></td>
+            <td><a href="#"><img src="imgs/7.jpg" width="300" height="450"></a>></td>
+            <td><a href="#"><img src="imgs/8.jpg" width="300" height="450"></a>></td>
+            <td><a href="#"><img src="imgs/9.jpg" width="300" height="450"></a>></td> 
+            
+
+
+        </table>
+        </tr>
+        <tr>
+        <table width="100px" border="1">
+            <td><a href="#"><img src="imgs/10.jpg" width="300" height="450"></a>></td>
+            <td><a href="#"><img src="imgs/11.jpg" width="300" height="450"></a>></td>
+            <td><a href="#"><img src="imgs/12.jpg" width="300" height="450"></a>></td>
+            <td><a href="#"><img src="imgs/13.jpg" width="300" height="450"></a>></td>
+            
+            
+        </table>
+        </tr>
+        </center>
+</body>
+</html><!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+          <div class="logo"><img src="imagens/LOGO.png"></div>  
+          <div class="menu">
+            <nav>
+              <a href="index.html">HOME</a>
+              <a href="produtos.html">PRODUTOS</a>
+              <a href="#">SAC</a>
+            </nav>
+        </div>
+        <div class="sociais">
+          <a href="https://www.instagram.com/"><img src="imagens/insta.png"></a>
+          <a href="https://www.X.com/"><img src="imagens/x.png"></a>
+          <a href="https://www.youtube.com/"><img src="imagens/youtube.png"></a>
+          <img src="imagens/CARRINHO.png">
+        </div>
+        </header>
+    <center>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <tr>
+        <table width="100px" border="1">
+            <td><a href="#"><img src="imagens/1.jpg" width="300" height="450"></a>></td>
+            <td><a href="#"><img src="imagens/2.jpg" width="300" height="450"></a>></td>
+            <td><a href="#"><img src="imagens/3.jpg" width="300" height="450"></a>></td>
+            <td><a href="#"><img src="imagens/4.jpg" width="300" height="450"></a>></td>
+        
+        
+        
+        </table>
+        </tr>
+        <tr>
+        <table width="100px" border="1">
+            <td><a href="#"><img src="imgs/6.jpg" width="300" height="450"></a>></td>
+            <td><a href="#"><img src="imgs/7.jpg" width="300" height="450"></a>></td>
+            <td><a href="#"><img src="imgs/8.jpg" width="300" height="450"></a>></td>
+            <td><a href="#"><img src="imgs/9.jpg" width="300" height="450"></a>></td> 
+            
+
+
+        </table>
+        </tr>
+        <tr>
+        <table width="100px" border="1">
+            <td><a href="#"><img src="imgs/10.jpg" width="300" height="450"></a>></td>
+            <td><a href="#"><img src="imgs/11.jpg" width="300" height="450"></a>></td>
+            <td><a href="#"><img src="imgs/12.jpg" width="300" height="450"></a>></td>
+            <td><a href="#"><img src="imgs/13.jpg" width="300" height="450"></a>></td>
+            
+            
+        </table>
+        </tr>
+        </center>
+</body>
+</html>
   
